@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="sortcut icon" href="https://g0f3rr.github.io/alan-redzimski/mini_logo_redzimski.jpg">
+<title>główny Alan Redzimski</title>
+<script>
+    window.onload = function() {
+        if (localStorage.getItem('visitCount')) {
+            var count = parseInt(localStorage.getItem('visitCount')) + 1;
+            localStorage.setItem('visitCount', count);
+        } else {
+            localStorage.setItem('visitCount', 24);
+        }
+
+        updateCounter();
+    };
+    function updateCounter() {
+        var count = localStorage.getItem('visitCount');
+        document.getElementById('counter').innerHTML = 'Liczba odwiedzeń: ' + count;
+    }
+</script>
+</head>
+<body bgcolor="white">
+<table width=95% border="1" align="center">
+  <tr>
+    <td colspan="3" align="center">
+        <iframe width=620 height=400 name="logo_pawlowski" src="https://g0f3rr.github.io/alan-redzimski/logo_redzimski.html" border="0"></iframe>
+
+    </td>
+</tr>
+<tr>
+<td width=18% align="center">
+<p align="center"> <font color="black" size="3" face="Arial"> lewe menu </font> </p> <br>
+    <p id="counter">Licznik odwiedzeń: 0</p>
+<br>
+<li>
+<a href="http://www.kuratorium.gda.pl" target="strony">Kuratorium</a>
+</li>
+<br>
+<li>
+<a href="https://zse.edu.gdansk.pl/pl" target="strony">ZSE Gdańsk</a>
+</li>
+<br>
+<li>
+  <a href="https://www.trojmiasto.pl" target="strony">strona trójmiasta</a>
+</li>
+<br>
+<li>
+<a href="https://g0f3rr.github.io/alan-redzimski/plik_glowny_redzimski.html" target="strony">powrot</a>
+</li>
+</td>
+<td align=center><iframe scrolling="no" width=650 height=650 name="strony" src="https://g0f3rr.github.io/alan-redzimski/plik_glowny_redzimski.html" border="0"></iframe>
+</td>
+<td width=18% align="center"><a href="https://g0f3rr.github.io/alan-redzimski/plik_glowny_redzimski.html" target="strony">prawe menu<br></a>
+    
+    <map id="mapa_redzimski">
+      <area shape="poly" coords="50,1,14,61,88,61" href="https://g0f3rr.github.io/alan-redzimski/INST_HTM_technik_2022.pdf" target="obszar_glowny">
+      <area shape="circle" coords="49,101,35" href="https://DawidPawlowski12.github.io/szkolaa/tabela_Pawlowski.html" target="obszar_glowny">
+      <area shape="circle" coords="47,174,35" href="https://DawidPawlowski12.github.io/szkolaa/formularz_Pawlowski.html" target="obszar_glowny">
+      <area shape="rect" coords="7,210,94,250" href="https://DawidPawlowski12.github.io/szkolaa/poczta_Pawlowski.html" target="obszar_glowny">
+      <area shape="rect" coords="6,259,95,291" href="https://g0f3rr.github.io/sprawdzian/index.html" target="obszar_glowny">
+     </map>
+      <img src="https://g0f3rr.github.io/sprawdzian/mapa.gif" alt="tutaj wybieraj linki" usemap="#mapa_redzimski">
+
+</td>
+</tr>
+<tr>
+  <td colspan="3" align="center">
+      <iframe scrolling="no" width=900 height=90 name="obszar_stopka" src="https://g0f3rr.github.io/alan-redzimski/stopka_redzimski.html" border="0"></iframe>
+
+
+  </td>
+</tr>
+</table>
+<script>
+    updateCounter();
+</script>
+</body>
+</html>
